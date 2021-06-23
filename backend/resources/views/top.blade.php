@@ -6,7 +6,7 @@
 @include("parts.header")
 
 <main>
-    <h1>これはトップページです</h1>
+    <h1>これはトップページです {{$name}} さん</h1>
 </main>
 
 @include("parts.footer")

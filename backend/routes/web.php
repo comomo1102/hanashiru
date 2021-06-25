@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\TopPageController;
+use App\Http\Controllers\TopController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ListController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [TopPageController::class, 'show']);
+Route::get('/', [TopController::class, 'index']);
+Route::get('/list', [ListController::class, 'index']);

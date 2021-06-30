@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS hanashiru;
+CREATE DATABASE hanashiru;
+USE hanashiru;
+DROP TABLE IF EXISTS flowers;
+
+CREATE TABLE flowers (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    name VARCHAR(50),
+    flowering_time_begin VARCHAR(10),
+    flowering_time_end VARCHAR(10),
+    flower_language VARCHAR(50),
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='花一覧';
+
+
+

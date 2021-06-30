@@ -18,6 +18,7 @@ services:
     build: ./infra/mysql
     volumes:
       - db-store:/var/lib/mysql
+      - ./infra/mysql/initdb.d:/docker-entrypoint-initdb.d
     ports:
       - 33060:3306
 
